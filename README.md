@@ -54,7 +54,7 @@ Tecnologie:
 
 5. Form Preventivo (wizard step-by-step)
    - Seguire gli step come le immagini in allegato:
-     ![ciao](image%1.png)
+     ![immaginetta](image.png)
 
 Utilizzare: Progress bar Bootstrap + validazione JS
 Il costo viene stabilito unicamente al primo step, sulla base di questi parametri: Parigi € 300, Roma € 100, Madrid € 200, Bangkok € 250.
