@@ -53,7 +53,7 @@ Tecnologie:
    - Ordinamento JS (per prezzo, durata, ecc.)
 
 5. Form Preventivo (wizard step-by-step)
-   - Seguire gli step come le immagini in allegato:
+   - Seguire gli step come le immagini in allegato:  
      ![immaginetta](image.png)
 
 Utilizzare: Progress bar Bootstrap + validazione JS
