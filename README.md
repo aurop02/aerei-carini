@@ -33,26 +33,26 @@ Tecnologie:
    - Menu con le varie voci
    - Bottone “Richiedi Preventivo” evidenziato
 
-2. Hero Section (Homepage)
+   Hero Section (Homepage)
 
    - Sfondo con immagine/video ispirazionale
    - Testo motivazionale: “Scopri il viaggio dei tuoi sogni”
    - Call to action: “Esplora le offerte” + “Richiedi Preventivo”
 
-3. Destinazioni
+2. Destinazioni
 
    - Griglia Bootstrap responsive (es. 3 colonne su desktop, 1 su mobile)
    - Card per ogni destinazione: immagine, nome, breve descrizione, bottone “Scopri”
    - Filtro JavaScript per continente o tipologia (mare, montagna, città, ecc.)
 
-4. Pacchetti Viaggio
+3. Pacchetti Viaggio
 
    - Lista pacchetti con card
    - Dettagli: titolo, descrizione, prezzo, durata, rating (stelle)
    - Pulsante “Dettagli” → popup/modal con info estese
    - Ordinamento JS (per prezzo, durata, ecc.)
 
-5. Form Preventivo (wizard step-by-step)
+4. Form Preventivo (wizard step-by-step)
    - Seguire gli step come le immagini in allegato:  
      ![immaginetta](image.png)
 
