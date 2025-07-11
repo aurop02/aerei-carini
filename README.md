@@ -77,3 +77,13 @@ Gli altri step non saranno utilizzati per calcolare il costo totale.
    - Link utili (FAQ, Termini, Privacy)
    - Social media icons
    - Newsletter (input email + invia)
+
+```css
+/* CSS HEX */
+--prussian-blue: #022f40ff;
+--blue-ncs: #0090c1ff;
+--sandy-brown: #fdad62ff;
+--alice-blue: #ebf2faff;
+```
+
+PALETTE: https://coolors.co/022f40-0090c1-fdad62-ebf2fa
