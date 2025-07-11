@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+</head>
+
+ <body>
+<h1>Chi siamo?</h1>
+<p>TeleportamiQui si occupa, dal lontano 2021, di organizzare i tuoi spostamenti in un batter d’occhio. Se cerchi una vacanza leggera ma soddisfacente, senza l'affanno di dover organizzare tutto nei termini più convenienti, lascia fare a noi.
+
+    Il nostro team ti porta ovunque, anche nelle destinazioni più improbabili! 
+    E i nostri mezzi di trasporto? Non solo aerei e treni: per un viaggio singolare bisogna disporre di mezzi unici...</p>
+<h2>La nostra filosofia</h2>
+<p>Grazie alla nostra etica professionale e alla nostra organizzazione creativa, trasformiamo ogni viaggio in un'esperienza che non dimenticherai facilmente... per motivi buoni, speriamo.
+</p>
+<p>Destinazioni migliori? Forse.
+Uniche? Sicuramente</p>
+
+ </body>
+ </body>
