@@ -32,7 +32,11 @@ Tecnologie:
    - Navbar responsive con Bootstrap
    - Menu con le varie voci
    - Bottone “Richiedi Preventivo” evidenziato
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 3e49c1a85dcc3984f98fd1c41079a59bc0c025c2
    Hero Section (Homepage)
 
    - Sfondo con immagine/video ispirazionale
@@ -62,19 +66,19 @@ Il costo viene poi moltiplicato per durata e partecipanti.
 Es: scelgo Parigi, durata 2 giorni, 5 partecipanti (300x2x5).
 Gli altri step non saranno utilizzati per calcolare il costo totale.
 
-6. Chi Siamo
+5. Chi Siamo
 
    - Testo descrittivo + Timeline agenzia
    - Team: card con foto, nome, ruolo, social
 
-7. Contatti
+6. Contatti
 
    - Modulo contatto con validazione JS
    - Mappa Google (embed)
    - Info: indirizzo, telefono, mail
    - Orari apertura
 
-8. Footer
+7. Footer
    - Link utili (FAQ, Termini, Privacy)
    - Social media icons
    - Newsletter (input email + invia)
