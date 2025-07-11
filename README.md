@@ -77,3 +77,5 @@ Gli altri step non saranno utilizzati per calcolare il costo totale.
    - Link utili (FAQ, Termini, Privacy)
    - Social media icons
    - Newsletter (input email + invia)
+  
+PALETTE: https://coolors.co/022f40-0090c1-fdad62-ebf2fa
