@@ -10701,7 +10701,7 @@ h5,
   color: #fff;
 }
 .ftco-navbar-light .navbar-brand span {
-  color: #01d28e;
+  color: #0090c1ff;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-brand {
@@ -11755,7 +11755,7 @@ h5,
 .services.services-2 .icon {
   width: 110px;
   height: 110px;
-  background: #1089ff;
+  background: #0090c1ff;
   border: none;
 }
 .services.services-2 .icon span {
