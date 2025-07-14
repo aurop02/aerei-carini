@@ -1,13 +1,12 @@
 * {
-  background-color: #acacac;
   margin: 0;
   padding: 0;
 }
 
-nav a {
-  background-color: #0000;
-}
-
 .jumbo {
   min-height: 600px;
+}
+
+.sponsors {
+  min-height: 350px;
 }
