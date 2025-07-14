@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbo {
+  min-height: 600px;
+}
+
+.sponsors {
+  min-height: 350px;
+}
+
+.formo {
+  min-height: 550px;
+}
