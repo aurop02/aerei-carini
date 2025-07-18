@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <title>Croco Travels - Timeline</title>
+    <style>
+      * {
+        font-family: "Mooli", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(to bottom, #0091c16a, #fef9ef);
+        margin: 0;
+        padding: 0;
+      }
+
+      .titolo-riquadro {
+        position: relative;
+        color: #022f40;
+        text-shadow: 3px 3px 5px #ebf2fa;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px #022f40;
+      }
+
+      .titolo-riquadro::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("Croco.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+        background-color: #022f40;
+        filter: brightness(60%);
+      }
+
+      .titolo-riquadro h1 {
+        margin: 0;
+        font-size: 3em;
+        letter-spacing: 2px;
+      }
+
+      .titolo-riquadro p {
+        max-width: 700px;
+        margin: 20px auto 0;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+
+      .timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(to bottom, #0090c1, #fdad62);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background: linear-gradient(135deg, #fdad62, #0090c1);
+  border: 3px solid #022f407b;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+  right: auto;
+}
+
+.timeline-content {
+  background: linear-gradient(to bottom, #fdad62, #0090c1);
+  padding: 20px;
+  border-radius: 22px;
+  box-shadow: 0 6px 12px #022f40;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::after {
+    left: 10px;
+  }
+}
+    </style>
+
+  <body>
+    <div class="titolo-riquadro">
+      <h1>Croco Travels</h1>
+      <p>
+        Scopri il mondo con stile e sorriso! <br />
+        <strong>Croco Travels</strong> è convenzionata con
+        <strong>Croco Airlines</strong> — la compagnia con l’aereo a forma di
+        coccodrillo, famoso per il suo muso aerodinamico e la coda panoramica —
+        e <strong>Croco Hotel</strong>, la catena con piscine tropicali e letti
+        che sembrano nuvole. <br />
+        Vivi l’avventura in modo esotico, comodo e… verde!
+      </p>
+    </div>
+
+    <div class="timeline">
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>2021</h3>
+      <p>
+        Nasce Croco Travels, un'idea selvaggiamente brillante: un'agenzia di
+        viaggi dedicata agli amanti dell’esotico, del comfort e
+        dell’insolito.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>2022</h3>
+      <p>
+        Lancio del primo tour "Safari in ciabatte" in Africa, con Croco
+        Airlines e pernottamenti nei Croco Hotel con vista savana (e minibar
+        tropicale!).
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>2023</h3>
+      <p>
+        Inaugurato l’aereo iconico: il <strong>Croco Jet</strong>, con forma
+        di coccodrillo e scivolo gonfiabile dalla bocca alla pista.
+        Instagram non è più stata la stessa.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item right">
+    <div class="timeline-content">
+      <h3>2024</h3>
+      <p>
+        Apertura delle prenotazioni per il "Giro del mondo in 80 drink
+        tropicali", tour premium all-inclusive tra isole, oceani e cocktail
+        bar con vista tramonto.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item left">
+    <div class="timeline-content">
+      <h3>2025</h3>
+      <p>
+        Croco Travels diventa l'agenzia preferita da famiglie, avventurieri
+        e viaggiatori-gourmet. Prossima tappa? Marte, versione eco-luxury!
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script>
+      // Carica footer
+      fetch("Footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
