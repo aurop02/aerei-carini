@@ -1,0 +1,97 @@
+.services-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card piccine e verticali */
+.services-small {
+  padding: 30px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bordino colorato in alto */
+.services-small::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #28a745, #ffc107);
+}
+
+/* Effetto hover */
+.services-small:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Icone circolari */
+.services-small .icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #007bff, #28a745);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Titoli delle card */
+.services-small h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+/* Testo delle card */
+.services-small p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+/* Colori diversi per ogni icona */
+.services-small:nth-child(1) .icon {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+.services-small:nth-child(2) .icon {
+  background: linear-gradient(45deg, #28a745, #1e7e34);
+}
+
+.services-small:nth-child(3) .icon {
+  background: linear-gradient(45deg, #ffc107, #e0a800);
+}
+
+/* Responsive per mobile */
+@media (max-width: 768px) {
+  .services-small {
+    height: auto;
+    min-height: 280px;
+  }
+
+  .services-container {
+    max-width: 100%;
+  }
+}
+
+.navbar-brand
