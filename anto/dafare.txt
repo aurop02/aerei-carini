@@ -1,5 +1,3 @@
-jumbo
-    img o vid da trovare ed aggiungere ultimate text
 
 main 
     sviluppo pulsanti filtro
