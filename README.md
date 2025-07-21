@@ -80,8 +80,8 @@ Gli altri step non saranno utilizzati per calcolare il costo totale.
 
 ```css
 /* CSS HEX */
---prussian-blue: #022f40ff;
---blue-ncs: #0090c1ff;
+--Caribbean Current: #006767;
+--SGBUS green: #55DD33;
 --sandy-brown: #fdad62ff;
 --alice-blue: #ebf2faff;
 ```
