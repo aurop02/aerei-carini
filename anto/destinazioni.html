@@ -100,12 +100,18 @@
         <div class="col-12 bg-primary">
           <!-- jumbo -->
           <div
-            class="background-vid container-fluid bg-danger jumbo g-0 d-flex align-items-end"
+            class="background-vid container-fluid bg-danger jumbo g-0 position-relative"
           >
             <video class="video-bg" autoplay muted loop>
               <source src="../anto/material/Timeline 1.mp4" type="video/mp4" />
             </video>
+            <div class="cta-jumbo position-absolute">
+              <a href="#sezione-cards" class="btn btn-discover"
+                >Scopri le Destinazioni</a
+              >
+            </div>
           </div>
+
           <!-- section cards -->
           <section>
             <!-- wrapper -->
@@ -120,6 +126,7 @@
               </label>
               <!-- card container -->
               <div
+                id="sezione-cards"
                 class="container d-flex justify-content-center flex-wrap bg-info my-5 p-5"
               >
                 <!-- Card 1: Santorini -->

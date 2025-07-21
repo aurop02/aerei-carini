@@ -113,6 +113,21 @@ header {
   z-index: 3;
 }
 
+.cta-jumbo {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 3;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+.cta-jumbo a.btn {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 /* SEZIONI PRINCIPALI */
 .container-fluid {
   padding: 0;
