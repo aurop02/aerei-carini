@@ -1,9 +1,0 @@
-jumbo
-    img o vid da trovare ed aggiungere ultimate text
-
-main 
-    sviluppo pulsanti filtro
-    aggiunta ultimate text per tutto
-    sviluppo card in base alla richiesta
-    sviluppo carosello automatico sponsor
-    sviluppo form per suggestions in base alle richieste del cliente
