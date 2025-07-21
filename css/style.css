@@ -10683,17 +10683,17 @@ h5,
 }
 
 .ftco-navbar-light {
-  background: transparent !important;
-  position: absolute;
-  top: 20px;
+  background: #ffffff3c !important;
+  position: fixed;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #000000 !important;
-    position: relative;
+    background: #ffffff3c !important;
+    position: fixed;
     top: 0;
   }
 }
@@ -12928,4 +12928,9 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.nav-item {
+  width: 160px !important;
+  text-align: center;
 }
