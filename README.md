@@ -51,7 +51,7 @@ Tecnologie:
    - Pulsante “Dettagli” → popup/modal con info estese
    - Ordinamento JS (per prezzo, durata, ecc.)
 
-4. Form Preventivo (wizard step-by-step) (Antonio)
+4. Form Preventivo (wizard step-by-step) (Auro)
    - Seguire gli step come le immagini in allegato:  
      ![immaginetta](image.png)
 
@@ -80,9 +80,9 @@ Gli altri step non saranno utilizzati per calcolare il costo totale.
 
 ```css
 /* CSS HEX */
---prussian-blue: #022f40ff;
---blue-ncs: #0090c1ff;
---sandy-brown: #fdad62ff;
+--Caribbean Current: #006767;
+--SGBUS green: #55DD33;
+--Office green: #008000;
 --alice-blue: #ebf2faff;
 ```
 
