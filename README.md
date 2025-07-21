@@ -51,7 +51,7 @@ Tecnologie:
    - Pulsante “Dettagli” → popup/modal con info estese
    - Ordinamento JS (per prezzo, durata, ecc.)
 
-4. Form Preventivo (wizard step-by-step) (Antonio)
+4. Form Preventivo (wizard step-by-step) (Auro)
    - Seguire gli step come le immagini in allegato:  
      ![immaginetta](image.png)
 
