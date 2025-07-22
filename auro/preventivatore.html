@@ -9,20 +9,202 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/flaticon.css" />
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="../css/aos.css" />
+
+    <link rel="stylesheet" href="../css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="../css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="../css/icomoon.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cocopreventivatore.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/auro/imgHome/crocologo.png"
+            alt="crocologo"
+            width="200"
+            height="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="Homepage.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/marta/Chi_Siamo.html" class="nav-link">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Carmine/pacchettiViaggio.html" class="nav-link"
+                >Pacchetti viaggio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/auro/preventivatore.html" class="nav-link"
+                >Preventivatore</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/anto/destinazioni.html" class="nav-link"
+                >Destinazioni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Offerte last minute.html" class="nav-link"
+                >Offerte last minute</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/aerei-carini/anto/html/contatti.html" class="nav-link"
+                >Contatti</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- strisciolina del preventivatore -->
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h3 class="progressbar-title">Preventivo</h3>
           <div class="progress">
-            <div class="progress-bar" style="width: 55%; background: #005394">
-              <i class="fa-solid fa-plane"></i>
+            <div class="progress-bar" style="width: 55%; background: #008000">
+              <i class="fa-plane"></i>
               <span>55%</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- dropdown carino -->
+    <div class="dropdown-container">
+      <button class="trigger-btn" onclick="toggleDropdown()">
+        Select Country
+      </button>
+
+      <div class="dropdown" id="dropdown">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search"
+            oninput="filterCountries(this.value)"
+          />
+          <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <div class="country-list" id="countryList">
+          <div class="country-item" onclick="selectCountry('Australia', 'AU')">
+            <div class="flag">🇦🇺</div>
+            <div class="country-name">Australia</div>
+            <div class="country-code">AU</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Brazil', 'BR')">
+            <div class="flag">🇧🇷</div>
+            <div class="country-name">Brazil</div>
+            <div class="country-code">BR</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Canada', 'CA')">
+            <div class="flag">🇨🇦</div>
+            <div class="country-name">Canada</div>
+            <div class="country-code">CA</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('China', 'CN')">
+            <div class="flag">🇨🇳</div>
+            <div class="country-name">China</div>
+            <div class="country-code">CN</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('France', 'FR')">
+            <div class="flag">🇫🇷</div>
+            <div class="country-name">France</div>
+            <div class="country-code">FR</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Germany', 'DE')">
+            <div class="flag">🇩🇪</div>
+            <div class="country-name">Germany</div>
+            <div class="country-code">DE</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Japan', 'JP')">
+            <div class="flag">🇯🇵</div>
+            <div class="country-name">Japan</div>
+            <div class="country-code">JP</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Spain', 'ES')">
+            <div class="flag">🇪🇸</div>
+            <div class="country-name">Spain</div>
+            <div class="country-code">ES</div>
+          </div>
+
+          <div
+            class="country-item"
+            onclick="selectCountry('United Kingdom', 'UK')"
+          >
+            <div class="flag">🇬🇧</div>
+            <div class="country-name">United Kingdom</div>
+            <div class="country-code">UK</div>
+          </div>
+
+          <div
+            class="country-item"
+            onclick="selectCountry('United States', 'US')"
+          >
+            <div class="flag">🇺🇸</div>
+            <div class="country-name">United States</div>
+            <div class="country-code">US</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
