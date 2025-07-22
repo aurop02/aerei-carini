@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #28a745, #ffc107);
+  background: linear-gradient(90deg, #006767, #008000, #55dd33);
 }
 
 /* Effetto hover */
@@ -71,15 +71,15 @@
 
 /* Colori diversi per ogni icona */
 .services-small:nth-child(1) .icon {
-  background: linear-gradient(45deg, #007bff, #0056b3);
+  background: linear-gradient(45deg, #006767, #006767);
 }
 
 .services-small:nth-child(2) .icon {
-  background: linear-gradient(45deg, #28a745, #1e7e34);
+  background: linear-gradient(45deg, #008000, #008000);
 }
 
 .services-small:nth-child(3) .icon {
-  background: linear-gradient(45deg, #ffc107, #e0a800);
+  background: linear-gradient(45deg, #55dd33 #55dd33);
 }
 
 /* Responsive per mobile */
@@ -95,23 +95,137 @@
 }
 
 .ftco-navbar-light {
-  background: #ffffff0c !important;
+  background: #ffffff3c !important;
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #ffffff0c !important;
-    position: relative;
-    top: 0;
+  background: #ffffff3c !important;
+  position: asbsolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
   }
 }
 
-i.fa-solid.fa-route {
+.fa-solid-fa-route {
   font-size: 30px !important;
   background-color: red !important;
   color: blue !important;
 }
+
+i.fa-solid-fa-r {
+  font-size: 25px;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #008000;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #008000;
+  outline: none !important;
+}
+
+.slider-text .icon-wrap .icon {
+  width: 70px;
+  height: 70px;
+  background: #55DD33;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.slider-text .icon-wrap .icon span {
+  color: #fff;
+}
+.slider-text .icon-wrap .heading-title {
+  position: relative;
+}
+.slider-text .icon-wrap .heading-title:after {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+/* - - - - - - - Preventivatore - - - - - - - - */
+.progress{
+    height: 30px;
+    line-height: 35px;
+    background: #a5a5a5;
+    box-shadow: none;
+    padding: 6px;
+    margin-top:20px;
+    overflow: visible;
+    border-radius:10px;
+}
+.progress:after{
+    content: "";
+    display: block;
+    border-top: 4px dashed #fff;
+    margin-top:8px;
+}
+.progressbar-title{
+    color:#333;
+    font-size:15px;
+    margin:5px 0;
+}
+.progress .progress-bar{
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar span{
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px 7px;
+    background: #333;
+    border-radius: 0 0 5px 5px;
+}
+.progress .progress-bar span:before{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 18px;
+    border: 7px solid transparent;
+    border-top: 7px solid #333;
+}
+.progress .progress-bar span:after{
+    content: "\f072";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 48px;
+    color: #333;
+    position: absolute;
+    top: 51px;
+    right: 6px;
+}
+@-webkit-keyframes animate-positive {
+    0% { width: 0%;}
+}
+@keyframes animate-positive {
+    0% { width:0%; }
+}
+/* fine preventivatore */
