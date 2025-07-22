@@ -167,7 +167,6 @@ a:focus {
 
 /* - - - - - - - Preventivatore - - - - - - - - */
 .progress{
-    height: 30px;
     line-height: 35px;
     background: #a5a5a5;
     box-shadow: none;
@@ -178,7 +177,7 @@ a:focus {
 }
 .progress:after{
     content: "";
-    display: block;
+    display: none;
     border-top: 4px dashed #fff;
     margin-top:8px;
 }
@@ -191,7 +190,12 @@ a:focus {
     position: relative;
     border-radius: 10px 0 0 10px;
     animation: animate-positive 2s;
-}
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 20px;
+    }
+
 .progress .progress-bar span{
     position: absolute;
     top: -50px;
