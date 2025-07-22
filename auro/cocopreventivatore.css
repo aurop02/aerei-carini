@@ -1,5 +1,5 @@
 /* dropdown */
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -173,7 +173,7 @@ body {
 }
 .progress:after {
   content: "";
-  display: block;
+  display: none;
   border-top: 4px dashed #fff;
   margin-top: 8px;
 }
@@ -184,6 +184,10 @@ body {
 }
 .progress .progress-bar {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 20px;
   border-radius: 10px 0 0 10px;
   animation: animate-positive 2s;
 }
