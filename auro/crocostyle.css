@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #28a745, #ffc107);
+  background: linear-gradient(90deg, #006767, #008000, #55dd33);
 }
 
 /* Effetto hover */
@@ -36,10 +36,10 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Icone circolari */
+/* Icone circolari - CORRETTE */
 .services-small .icon {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background: linear-gradient(45deg, #007bff, #28a745);
   border-radius: 50%;
   margin: 0 auto 20px;
@@ -71,15 +71,15 @@
 
 /* Colori diversi per ogni icona */
 .services-small:nth-child(1) .icon {
-  background: linear-gradient(45deg, #007bff, #0056b3);
+  background: linear-gradient(45deg, #006767, #006767);
 }
 
 .services-small:nth-child(2) .icon {
-  background: linear-gradient(45deg, #28a745, #1e7e34);
+  background: linear-gradient(45deg, #008000, #008000);
 }
 
 .services-small:nth-child(3) .icon {
-  background: linear-gradient(45deg, #ffc107, #e0a800);
+  background: linear-gradient(45deg, #55dd33, #55dd33);
 }
 
 /* Responsive per mobile */
@@ -95,18 +95,22 @@
 }
 
 .ftco-navbar-light {
-  background: #ffffff0c !important;
+  background: #ffffff3c !important;
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 3;
 }
+
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #ffffff0c !important;
-    position: relative;
-    top: 0;
+    background: #ffffff3c !important;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 3;
   }
 }
 
@@ -114,4 +118,145 @@ div.icon i.fa-solid.fa-route {
   font-size: 30px !important;
   background-color: red !important;
   color: blue !important;
+}
+
+i.fa-solid-fa-r {
+  font-size: 25px;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #008000;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #008000;
+  outline: none !important;
+}
+
+.slider-text .icon-wrap .icon {
+  width: 70px;
+  height: 70px;
+  background: #55dd33;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.slider-text .icon-wrap .icon span {
+  color: #fff;
+}
+
+.slider-text .icon-wrap .heading-title {
+  position: relative;
+}
+
+.slider-text .icon-wrap .heading-title:after {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+
+/* CSS reviews */
+body {
+  margin-top: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.hash-list {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hash-list.cols-3 > li:nth-last-child(-n + 3) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hash-list.cols-3 > li {
+    width: 33.3333%;
+  }
+}
+
+.hash-list > li {
+  display: block;
+  float: left;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pad-30,
+.pad-30-all > * {
+  padding: 30px;
+}
+
+img {
+  border: 0;
+}
+
+.mgb-20,
+.mgb-20-all > * {
+  margin-bottom: 20px;
+}
+
+.wpx-100,
+.wpx-100-after:after {
+  width: 100px;
+}
+
+.img-round,
+.img-rel-round {
+  border-radius: 50%;
+}
+
+.padb-30,
+.padb-30-all > * {
+  padding-bottom: 30px;
+}
+
+.mgb-40,
+.mgb-40-all > * {
+  margin-bottom: 40px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+[class*="line-b"] {
+  position: relative;
+  padding-bottom: 20px;
+  border-color: #e6af2a;
+}
+
+.fg-text-d,
+.fg-hov-text-d:hover,
+.fg-active-text-d.active {
+  color: #222;
+}
+
+.font-cond-b {
+  font-weight: 700 !important;
+}
+
+#recensionine {
+  list-style: none;
 }

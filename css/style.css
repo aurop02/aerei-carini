@@ -10724,7 +10724,7 @@ h5,
   opacity: 1 !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-  color: #0090c1;
+  color: #55dd33;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -10793,7 +10793,7 @@ h5,
   background: #01d28e !important;
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: #022f40;
+  color: #008000;
 }
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
