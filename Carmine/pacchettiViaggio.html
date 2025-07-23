@@ -23,64 +23,99 @@
 <body id="corpo">
 
 <!--navbar start-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Brainrot Travels</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Chi siamo</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Prenota Ora
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Destinazioni</a></li>
-                        <li><a class="dropdown-item" href="#">Pacchetti Viaggio</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Contatti</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Link</a>
-                </li>
+<header>
+      <!-- navbar -->
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
+        id="ftco-navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="/auro/imgHome/crocologo.png"
+              alt="crocologo"
+              width="200"
+              height="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#ftco-nav"
+            aria-controls="ftco-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="oi oi-menu"></span> Menu
+          </button>
+
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="Homepage.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/marta/Chi Siamo.html" class="nav-link">Chi siamo</a>
+              </li>
+              <li class="nav-item">
+                <a href="/Carmine/pacchettiViaggio.html" class="nav-link"
+                  >Pacchetti viaggio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="Preventivatore.html" class="nav-link"
+                  >Preventivatore</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/anto/destinazioni.html" class="nav-link"
+                  >Destinazioni</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="Offerte last minute.html" class="nav-link"
+                  >Offerte last minute</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/aerei-carini/anto/html/contatti.html" class="nav-link"
+                  >Contatti</a
+                >
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Cerca nel sito" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Cerca</button>
-            </form>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
+    </header>
 <!--navbar end-->
 
 <div class="container my-5">
 
-    <h1 class="mb-4" style="text-align: center; color: aliceblue;">Pacchetti Viaggio</h1>
-    <h4 class="mb-4" style="text-align: center;"">Prenota ora, organizziamo noi...</h4>
+  <div class="p-4 rounded-4 bg-white shadow">
+    <h1 class="mb-4" style="text-align: center; color: rgb(29, 88, 139); font-weight: 600 ;" >Pacchetti Viaggio</h1>
+    <h4 class="mb-4" style="text-align: center;"">Tu prenoti, noi addentiamo.</h4>
 
     <div class="mb-4">
         <label for="sortSelect" class="form-label">Ordina per:</label>
         <select class="form-select w-auto d-inline-block" id="sortSelect" aria-label="Ordina pacchetti">
             <option selected>Seleziona</option>
-            <option value="prezzo">Prezzo</option>
-            <option value="durata">Durata</option>
-            <option value="rating">Rating</option>
+            <option value="prezzo">Prezzo ↓</option>
+            <option value="durata">Durata ↓</option>
+            <option value="rating">Rating ↓</option>
         </select>
     </div>
+
+
+
+
+    
     <div class="row g-4">
 
 
         <!-- Card 1 -->
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="350" data-durata="3" data-rating="3">
                 <div class="position-relative h-100">
                     <img src="https://www.brainstormingculturale.it/wp-content/uploads/2022/07/russia-853x1024-1024x585.jpg"
                          class="card-img rounded-4 h-100"
@@ -112,7 +147,7 @@
 
         <!-- Card 2 -->
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="530" data-durata="5" data-rating="5">
                 <div class="position-relative h-100">
                     <img src="https://assets.voxcity.com/uploads/blog_images/What-is-the-first-place-to-visit-when-you-travel-to-Rome_original.jpg"
                          class="card-img rounded-4 h-100"
@@ -137,10 +172,12 @@
                 </div>
             </div>
         </div>
+
+        
         <!-- Card 3 -->
 
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="2500" data-durata="14" data-rating="5">
                 <div class="position-relative h-100">
                     <img src="https://travel.thewom.it/content/uploads/sites/4/2023/02/Shutterstock_776445706-1.jpg"
                          class="card-img rounded-4 h-100"
@@ -171,7 +208,7 @@
         <!-- Card 4 -->
 
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="3300" data-durata="14" data-rating="4">
                 <div class="position-relative h-100">
                     <img src="https://img.freepik.com/premium-photo/statue-liberty-with-manhattan-city-skyline-background-landmarks-new-york-city-usa_255553-377.jpg"
                          class="card-img rounded-4 h-100"
@@ -205,7 +242,7 @@
         <!-- Card 5 -->
 
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="2300" data-durata="14" data-rating="5">
                 <div class="position-relative h-100">
                     <img src="https://superviaggi.com/wp-content/uploads/2025/03/Thailandia.jpg"
                          class="card-img rounded-4 h-100"
@@ -239,7 +276,7 @@
         <!-- Card 6 -->
 
         <div class="col-md-4">
-            <div class="card text-white rounded-4 overflow-hidden h-100">
+            <div class="card text-white rounded-4 overflow-hidden h-100" data-prezzo="90" data-durata="2" data-rating="1">
                 <div class="position-relative h-100">
                     <img src="https://www.baritoday.it/~media/horizontal-hi/66415776985913/caciocavallo-impiccato-01-800x445-2.jpg"
                          class="card-img rounded-4 h-100"
@@ -267,6 +304,7 @@
         </div>
 
     </div>
+ </div>
 </div>
 
 <!-- Modal Roma -->
@@ -287,7 +325,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>529.99 €</strong></p>
                 <p>Durata: 5 giorni</p>
-                <p>Rating:</p>
+                <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -317,7 +361,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>€350</strong></p>
                 <p>Durata: 3 giorni</p>
-                <p>Rating:</p>
+                <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -347,7 +397,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>2500 €</strong></p>
                 <p>Durata: 14 giorni</p>
-                <p>Rating:</p>
+                <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -378,7 +434,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>3299.99 €</strong></p>
                 <p>Durata: 14 giorni</p>
-                <p>Rating:</p>
+                <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -408,7 +470,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>2299.99 €</strong></p>
                 <p>Durata: 14 giorni</p>
-                <p>Rating:</p>
+                 <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -439,7 +507,13 @@
                 </ul>
                 <p>Prezzo finale: <strong>89.99 €</strong></p>
                 <p>Durata: 14 giorni</p>
-                <p>Rating:</p>
+                 <p>Rating: 
+                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -451,86 +525,85 @@
 
 <!-- piede -->
 <footer class="modern-footer pt-5">
-    <div class="container footer-content">
+      <div class="container footer-content">
         <div class="row g-4 mb-5">
-            <!-- Company Info -->
-            <div class="col-lg-4 col-md-6">
-                <a href="#" class="footer-logo d-block mb-4">
-                    TeleportamiQui
-                </a>
-                <ul class="contact-info mb-4">
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a href="Via delle Palme, 18 - 00145, Roma (RM), Italia" class="contact-link">Via delle Palme, 18 - 00145, Roma (RM), Italia </a>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+390698765432" class="contact-link">+39 06 9876 5432</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:contact@yourbrand.com" class="contact-link">agenziaTQ@viaggi.com</a>
-                    </li>
-                </ul>
-            </div>
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="footer-logo d-block mb-4">
+              Croco Travels
+            </a>
+            <ul class="contact-info mb-4">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="Via delle Palme, 18 - 00145, Roma (RM), Italia" class="contact-link">Via delle Palme, 18 - 00145, Roma (RM), Italia </a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+390698765432" class="contact-link">+39 06 9876 5432</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contact@yourbrand.com" class="contact-link">CrocoTravels@viaggi.com</a>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-title">Collegamenti utili</h3>
-                <ul class="quick-links">
-                    <li><a href="/contatti">Contattaci</a></li>
-                    <li><a href="/Chi siamo">Chi siamo</a></li>
-                    <li><a href="/homepage">Le nostre offerte</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="footer-title">Collegamenti utili</h3>
+            <ul class="quick-links">
+              <li><a href="/contatti">Contattaci</a></li>
+              <li><a href="Chi_Siamo.html">Chi siamo</a></li>
+              <li><a href="pacchettiViaggio.html">Le nostre offerte</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
 
-            <!-- Newsletter -->
-            <div class="col-lg-4 col-md-12">
-                <h3 class="footer-title">Tieniti in contatto!</h3>
-                <p class="text-muted mb-4">
-                    Iscriviti alla newsletter e ricevi tutte le notifiche relative alle nostre
-                    attività!
-                </p>
-                <form class="mb-4">
-                    <div class="mb-3">
-                        <input
-                                type="email"
-                                class="form-control newsletter-input"
-                                placeholder="Inserisci l'indirizzo di posta elettronica"
-                        />
-                    </div>
-                    <button type="submit" class="btn btn-subscribe text-white w-100">
-                        Iscriviti ora
-                    </button>
-                </form>
-                <div class="social-links">
-                    <a href="#" class="social-icon"
-                    ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"
-                    ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                </div>
+          <!-- Newsletter -->
+          <div class="col-lg-4 col-md-12">
+            <h3 class="footer-title">Tieniti in contatto!</h3>
+            <p class="text-muted mb-4">
+              Iscriviti alla newsletter e ricevi tutte le notifiche relative alle nostre
+              attività!
+            </p>
+            <form class="mb-4">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control newsletter-input"
+                  placeholder="Inserisci l'indirizzo di posta elettronica"
+                />
+              </div>
+              <button type="submit" class="btn btn-subscribe text-white w-100">
+                Iscriviti ora
+              </button>
+            </form>
+            <div class="social-links">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i></a> <!--1-->
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> <!--2-->
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i></a> <!--3-->
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> <!--4-->
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-md-6 text-center text-md-start">
-                    <p>&copy; 2024 TeleportamiQui. All rights reserved.</p>
-                </div>
+          <div class="row py-4">
+            <div class="col-md-6 text-center text-md-start">
+              <p>&copy; 2025 Croco Travels. All rights reserved.</p>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="ordinamento.js"></script>
 </body>
 </html>
 
