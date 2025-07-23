@@ -10682,6 +10682,22 @@ h5,
   color: #1089ff !important;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  transition: all 0.3s ease;
+}
+
+/* Questo si attiva quando c'è contenuto dietro la navbar */
+.navbar:hover,
+.content:target ~ .navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
 .ftco-navbar-light {
   background: #ffffff3c !important;
   position: fixed;
