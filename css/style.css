@@ -10654,12 +10654,12 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  color: #1089ff;
+  color: #55dd33;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1089ff;
+  color: #006767;
   outline: none !important;
 }
 
@@ -10968,7 +10968,7 @@ h5,
 .slider-text .icon-wrap .icon {
   width: 70px;
   height: 70px;
-  background: #fdad62;
+  background: #008000;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
