@@ -44,7 +44,7 @@
 
 .airplane-icon {
   position: absolute;
-  top: -11px;
+  top: -9px;
   color: #008000;
   font-size: 2rem;
   transition: left 0.4s ease-in-out;
@@ -59,6 +59,7 @@
 .progress-bar {
   background: linear-gradient(90deg, #008000, #55dd33);
   transition: width 0.4s ease-in-out;
+  top: -9px;
 }
 
 .wizard-step {
