@@ -114,10 +114,8 @@
   }
 }
 
-.fa-solid-fa-route {
-  font-size: 30px !important;
-  background-color: red !important;
-  color: blue !important;
+div.icon i.fa-solid.fa-route {
+  font-size: 30px;
 }
 
 i.fa-solid-fa-r {
