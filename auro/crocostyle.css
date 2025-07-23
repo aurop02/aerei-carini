@@ -340,3 +340,7 @@ img {
 .font-cond-b {
   font-weight: 700 !important;
 }
+
+#recensionine {
+  list-style: none;
+}
