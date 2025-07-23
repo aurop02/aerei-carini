@@ -5,12 +5,11 @@
 
 /* Card piccine e verticali */
 .services-small {
-  padding: 30px 20px;
+  padding: 30px 30px;
   background: white;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,10 +111,6 @@
     right: 0;
     z-index: 3;
   }
-}
-
-div.icon i.fa-solid.fa-route {
-  font-size: 30px;
 }
 
 i.fa-solid-fa-r {
