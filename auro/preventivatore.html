@@ -4,13 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preventivi</title>
+    <!-- CSS Marta -->
+    <link rel="stylesheet" href="/marta/style.css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../marta/style.css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css mio-->
     <link rel="stylesheet" href="crocostyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/flaticon.css" />
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="../css/aos.css" />
+
+    <link rel="stylesheet" href="../css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="../css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="../css/icomoon.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cocopreventivatore.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/auro/imgHome/crocologo.png"
+            alt="crocologo"
+            width="200"
+            height="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="Homepage.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/marta/Chi_Siamo.html" class="nav-link">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Carmine/pacchettiViaggio.html" class="nav-link"
+                >Pacchetti viaggio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/auro/preventivatore.html" class="nav-link"
+                >Preventivatore</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/anto/destinazioni.html" class="nav-link"
+                >Destinazioni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="Offerte last minute.html" class="nav-link"
+                >Offerte last minute</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/aerei-carini/anto/html/contatti.html" class="nav-link"
+                >Contatti</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- strisciolina del preventivatore -->
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -23,5 +128,180 @@
         </div>
       </div>
     </div>
+
+    <!-- dropdown carino -->
+    <div class="dropdown-container">
+      <button class="trigger-btn" onclick="toggleDropdown()">
+        Select Country
+      </button>
+
+      <div class="dropdown" id="dropdown">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search"
+            oninput="filterCountries(this.value)"
+          />
+          <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <div class="country-list" id="countryList">
+          <div class="country-item" onclick="selectCountry('Australia', 'AU')">
+            <div class="flag">🇦🇺</div>
+            <div class="country-name">Australia</div>
+            <div class="country-code">AU</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Brazil', 'BR')">
+            <div class="flag">🇧🇷</div>
+            <div class="country-name">Brazil</div>
+            <div class="country-code">BR</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Canada', 'CA')">
+            <div class="flag">🇨🇦</div>
+            <div class="country-name">Canada</div>
+            <div class="country-code">CA</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('China', 'CN')">
+            <div class="flag">🇨🇳</div>
+            <div class="country-name">China</div>
+            <div class="country-code">CN</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('France', 'FR')">
+            <div class="flag">🇫🇷</div>
+            <div class="country-name">France</div>
+            <div class="country-code">FR</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Germany', 'DE')">
+            <div class="flag">🇩🇪</div>
+            <div class="country-name">Germany</div>
+            <div class="country-code">DE</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Japan', 'JP')">
+            <div class="flag">🇯🇵</div>
+            <div class="country-name">Japan</div>
+            <div class="country-code">JP</div>
+          </div>
+
+          <div class="country-item" onclick="selectCountry('Spain', 'ES')">
+            <div class="flag">🇪🇸</div>
+            <div class="country-name">Spain</div>
+            <div class="country-code">ES</div>
+          </div>
+
+          <div
+            class="country-item"
+            onclick="selectCountry('United Kingdom', 'UK')"
+          >
+            <div class="flag">🇬🇧</div>
+            <div class="country-name">United Kingdom</div>
+            <div class="country-code">UK</div>
+          </div>
+
+          <div
+            class="country-item"
+            onclick="selectCountry('United States', 'US')"
+          >
+            <div class="flag">🇺🇸</div>
+            <div class="country-name">United States</div>
+            <div class="country-code">US</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="preventivatore.js"></script>
+
+ <!-- Footer -->
+    <footer class="modern-footer pt-5">
+      <div class="container footer-content">
+        <div class="row g-4 mb-5">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="footer-logo d-block mb-4">
+              Croco Travels
+            </a>
+            <ul class="contact-info mb-4">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="Via delle Palme, 18 - 00145, Roma (RM), Italia" class="contact-link">Via delle Palme, 18 - 00145, Roma (RM), Italia </a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+390698765432" class="contact-link">+39 06 9876 5432</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contact@yourbrand.com" class="contact-link">CrocoTravels@viaggi.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="footer-title">Collegamenti utili</h3>
+            <ul class="quick-links">
+              <li><a href="/contatti">Contattaci</a></li>
+              <li><a href="Chi_Siamo.html">Chi siamo</a></li>
+              <li><a href="pacchettiViaggio.html">Le nostre offerte</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-4 col-md-12">
+            <h3 class="footer-title">Tieniti in contatto!</h3>
+            <p class="text-muted mb-4">
+              Iscriviti alla newsletter e ricevi tutte le notifiche relative alle nostre
+              attività!
+            </p>
+            <form class="mb-4">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control newsletter-input"
+                  placeholder="Inserisci l'indirizzo di posta elettronica"
+                />
+              </div>
+              <button type="submit" class="btn btn-subscribe text-white w-100">
+                Iscriviti ora
+              </button>
+            </form>
+            <div class="social-links">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i></a> <!--1-->
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> <!--2-->
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i></a> <!--3-->
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> <!--4-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-md-6 text-center text-md-start">
+              <p>&copy; 2025 Croco Travels. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
   </body>
 </html>
