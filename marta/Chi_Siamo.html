@@ -16,20 +16,21 @@
         font-weight: 400;
         font-style: normal;
         box-sizing: border-box;
-        color: #022f40;
       }
+
       body {
-        background: linear-gradient(to bottom, #0091c16a, #fef9ef);
+        background: linear-gradient(to bottom, #55dd3358, #ebf2faff);
         margin: 0;
         padding: 0;
       }
 
       .titolo-riquadro {
+        color: #ebf2faff;
         position: relative;
-        text-shadow: 3px 3px 5px #ebf2fa;
+        text-shadow: 3px 3px 3px #006767;
         padding: 40px 20px;
         text-align: center;
-        box-shadow: 0 4px 6px #022f40;
+        box-shadow: 0 4px 6px #006767;
       }
 
       .titolo-riquadro::before {
@@ -39,12 +40,11 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("Croco.jpg");
-        background-size: cover;
-        background-position: center;
         opacity: 0.2;
-        background-color: #022f40;
+        background: url("Croco.jpg") center/cover;
+        backdrop-filter: blur(10px);
         filter: brightness(60%);
+        z-index: -1;
       }
 
       .titolo-riquadro h1 {
@@ -58,6 +58,19 @@
         margin: 20px auto 0;
         font-size: 1.2em;
         font-weight: 500;
+        color: #ebf2faff;
+      }
+
+      p {
+        color: #008000;
+      }
+
+      .timeline-content p {
+        color: #ebf2faff;
+      }
+
+      .timeline-content h3 {
+        color: #ebf2faff;
       }
 
       .timeline {
@@ -74,7 +87,7 @@
         bottom: 0;
         left: 50%;
         width: 4px;
-        background: linear-gradient(to bottom, #0090c1, #fdad62);
+        background: linear-gradient(to bottom, #006767, #55dd33);
         transform: translateX(-50%);
       }
 
@@ -90,7 +103,7 @@
         width: 20px;
         height: 20px;
         right: -10px;
-        background: linear-gradient(135deg, #fdad62, #0090c1);
+        background: linear-gradient(135deg, #55dd33, #0090c1);
         border: 3px solid #022f407b;
         top: 20px;
         border-radius: 50%;
@@ -113,7 +126,7 @@
       }
 
       .timeline-content {
-        background: linear-gradient(to bottom, #fdad62, #0090c1);
+        background: linear-gradient(to bottom, #55dd33, #006767);
         padding: 20px;
         border-radius: 22px;
         box-shadow: 0 6px 12px #022f40;
@@ -163,15 +176,15 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        background-color: #ebf2fa;
-        color: #fdad62;
+        background-color: #006767;
+        color: #55dd33;
         margin: 0 5px;
         transition: all 0.3s ease;
       }
 
       .team-social-links a:hover {
-        background-color: #fdad62;
-        color: #0090c1;
+        background-color: #55dd33;
+        color: #008000;
         transform: translateY(-3px);
       }
 
@@ -180,7 +193,7 @@
         height: 200px;
         object-fit: cover;
         border-radius: 50%;
-        border: 5px solid #fdad62;
+        border: 5px solid #55dd33;
         transition: transform 0.3s ease;
       }
 
@@ -193,7 +206,7 @@
         display: block;
         width: 50px;
         height: 3px;
-        background-color: #0090c1;
+        background-color: #55dd33;
         margin: 20px auto;
       }
     </style>
