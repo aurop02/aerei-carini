@@ -28,6 +28,7 @@
     />
     <!-- CSS mio? -->
     <link rel="stylesheet" href="../css/flaticon.css" />
+    <link rel="stylesheet" href="/auro/Carostyle.css" />
     <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="../css/animate.css" />
 
@@ -119,198 +120,317 @@
     </nav>
     <!-- END nav -->
 
-    <!-- hero (?) -->
-    <div
-      class="hero-wrap ftco-degree-bg"
-      style="background-image: url('../auro/imgHome/111.jpg')"
-    >
-      <div class="overlay"></div>
-      <div class="container">
-        <div
-          class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
-        >
-          <div class="col-lg-8 ftco-animate">
-            <div class="text w-100 text-center mb-md-5 pb-md-5">
-              <h1 class="mb-4">Scopri il viaggio dei tuoi sogni,</h1>
-              <p style="font-size: 18px">
-                ma prenota prima che il coccodrillo si mangi le offerte.
-              </p>
-              <a
-                href="/auro/preventivatore.html"
-                class="icon-wrap d-flex align-items-center mt-4 justify-content-center"
-              >
-                <div
-                  class="icon d-flex align-items-center justify-content-center"
+    <main>
+      <!-- hero (?) -->
+      <div
+        class="hero-wrap ftco-degree-bg"
+        style="background-image: url('../auro/imgHome/111.jpg')"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div
+            class="row no-gutters slider-text justify-content-start align-items-center justify-content-center"
+          >
+            <div class="col-lg-8 ftco-animate">
+              <div class="text w-100 text-center mb-md-5 pb-md-5">
+                <h1 class="mb-4">Scopri il viaggio dei tuoi sogni,</h1>
+                <p style="font-size: 18px">
+                  ma prenota prima che il coccodrillo si mangi le offerte.
+                </p>
+                <a
+                  href="/auro/preventivatore.html"
+                  class="icon-wrap d-flex align-items-center mt-4 justify-content-center"
                 >
-                  <i class="fa-solid fa-r"></i>
-                </div>
-                <div class="heading-title ml-5">
-                  <span>Addenta una delle nostre offerte</span>
-                </div>
-              </a>
+                  <div
+                    class="icon d-flex align-items-center justify-content-center"
+                  >
+                    <i class="fa-solid fa-r"></i>
+                  </div>
+                  <div class="heading-title ml-5">
+                    <span>Addenta una delle nostre offerte</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Servizi -->
-    <section class="ftco-section">
+      <!-- Servizi -->
+      <section class="ftco-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <h2 class="mb-3">Servizi da veri predatori delle occasioni!</h2>
+            </div>
+          </div>
+          <div class="services-container">
+            <div class="row">
+              <div class="col-md-4 mb-4">
+                <div class="services-small text-center">
+                  <div class="icon" id="cerchiettino">
+                    <i class="fa-solid fa-route"></i>
+                  </div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Destinazioni esclusive</h3>
+                    <p>
+                      Scopri luoghi unici e affascinanti, selezionati per
+                      offrirti esperienze autentiche e memorabili. Le nostre
+                      destinazioni esclusive sono pensate per chi cerca il
+                      viaggio perfetto, lontano dalle mete convenzionali.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="services-small text-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                  </div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Pacchetti viaggio</h3>
+                    <p>
+                      Soluzioni complete per ogni tipo di viaggiatore: dai
+                      soggiorni romantici alle avventure in famiglia, i nostri
+                      pacchetti combinano comodità, risparmio e cura nei
+                      dettagli per garantirti una vacanza senza pensieri.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-4">
+                <div class="services-small text-center">
+                  <div class="icon">
+                    <i class="fa-solid fa-coins"></i>
+                  </div>
+                  <div class="text w-100">
+                    <h3 class="heading mb-2">Offerte speciali</h3>
+                    <p>
+                      Approfitta delle promozioni più vantaggiose e parti al
+                      miglior prezzo! Le nostre offerte speciali sono aggiornate
+                      costantemente per permetterti di realizzare il tuo
+                      prossimo viaggio da sogno, spendendo meno.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carosello carino -->
+      <div class="container" id="carosellino">
+        <div class="title"></div>
+
+        <div class="section" id="carousel">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 mr-auto ml-auto">
+                <!-- Carousel Card -->
+                <div class="card card-raised card-carousel">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="3000"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="0"
+                        class="active"
+                      ></li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="1"
+                        class=""
+                      ></li>
+                      <li
+                        data-target="#carouselExampleIndicators"
+                        data-slide-to="2"
+                        class=""
+                      ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          class="d-block w-100"
+                          src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg.jpg"
+                          alt="First slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h4>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Yellowstone National Park, United States
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="d-block w-100"
+                          src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg2.jpg"
+                          alt="Second slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h4>
+                            <i class="material-icons">location_on</i>
+                            Somewhere Beyond, United States
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          class="d-block w-100"
+                          src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg3.jpg"
+                          alt="Third slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h4>
+                            <i class="material-icons">location_on</i>
+                            Yellowstone National Park, United States
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselExampleIndicators"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <i class="fa-solid fa-angle-left"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselExampleIndicators"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <i class="fa-solid fa-angle-right"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Carousel Card -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVIEW PART -->
       <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-3">Servizi da veri predatori delle occasioni!</h2>
-          </div>
+        <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
+          <h4
+            class="font-cond-l fg-accent lts-md mgb-10"
+            contenteditable="false"
+          >
+            Ancora non ti senti deciso a mordere le occasioni?
+          </h4>
+          <h1
+            class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg"
+            contenteditable="false"
+          >
+            Leggi le recensioni dei nostri clienti!
+          </h1>
         </div>
-        <div class="services-container">
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="services-small text-center">
-                <div class="icon">
-                  <i class="fa-solid fa-route"></i>
-                </div>
-                <div class="text w-100">
-                  <h3 class="heading mb-2">Destinazioni esclusive</h3>
-                  <p>
-                    Scopri luoghi unici e affascinanti, selezionati per offrirti
-                    esperienze autentiche e memorabili. Le nostre destinazioni
-                    esclusive sono pensate per chi cerca il viaggio perfetto,
-                    lontano dalle mete convenzionali.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="services-small text-center">
-                <div class="icon">
-                  <i class="fa-solid fa-suitcase-rolling"></i>
-                </div>
-                <div class="text w-100">
-                  <h3 class="heading mb-2">Pacchetti viaggio</h3>
-                  <p>
-                    Soluzioni complete per ogni tipo di viaggiatore: dai
-                    soggiorni romantici alle avventure in famiglia, i nostri
-                    pacchetti combinano comodità, risparmio e cura nei dettagli
-                    per garantirti una vacanza senza pensieri.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="services-small text-center">
-                <div class="icon">
-                  <i class="fa-solid fa-coins"></i>
-                </div>
-                <div class="text w-100">
-                  <h3 class="heading mb-2">Offerte speciali</h3>
-                  <p>
-                    Approfitta delle promozioni più vantaggiose e parti al
-                    miglior prezzo! Le nostre offerte speciali sono aggiornate
-                    costantemente per permetterti di realizzare il tuo prossimo
-                    viaggio da sogno, spendendo meno.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEW PART -->
-    <div class="container">
-      <div class="mgb-40 padb-30 auto-invert line-b-4 align-center">
-        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">
-          Ancora non ti senti deciso a mordere le occasioni?
-        </h4>
-        <h1
-          class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg"
-          contenteditable="false"
+        <ul
+          class="d-flex flex-wrap justify-content-center flex-row cols-3 cols-1-xs pad-30-all align-center text-sm"
+          id="recensionine"
         >
-          Leggi le recensioni dei nostri clienti!
-        </h1>
+          <li>
+            <img
+              src="/auro/imgHome/reviews1.png"
+              class="wpx-100 img-round mgb-20"
+              title=""
+              alt=""
+              data-edit="false"
+              data-editor="field"
+              data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+            />
+            <p class="fs-110 font-cond-l" contenteditable="false">
+              "Con Crocotravels ho trovato un’agenzia che morde davvero… ma solo
+              le complicazioni! Hanno organizzato tutto nei minimi dettagli:
+              voli, hotel e persino attività extra. Io dovevo solo rilassarmi al
+              sole mentre loro tenevano lontani i ‘piranha’ dello stress.
+              Consigliatissimi!"
+            </p>
+            <h5
+              class="font-cond mgb-5 fg-text-d fs-130"
+              contenteditable="false"
+            >
+              Alice R.
+            </h5>
+            <small
+              class="font-cond case-u lts-sm fs-80 fg-text-l"
+              contenteditable="false"
+              >“Un viaggio da veri coccodrilli”</small
+            >
+          </li>
+          <li>
+            <img
+              src="/auro/imgHome/reviews2.jpg"
+              class="wpx-100 img-round mgb-20"
+              title=""
+              alt=""
+              data-edit="false"
+              data-editor="field"
+              data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+            />
+            <p class="fs-110 font-cond-l" contenteditable="false">
+              "Sono sempre stato scettico sulle agenzie, ma questi ragazzi sono
+              stati fantastici. Offerte feroci, preventivi rapidi e nessun
+              imprevisto (se non la quantità di tramonti bellissimi!).
+              Crocotravels non lascia nulla al caso, come un vero predatore
+              delle occasioni."
+            </p>
+            <h5
+              class="font-cond mgb-5 fg-text-d fs-130"
+              contenteditable="false"
+            >
+              Marco B.
+            </h5>
+            <small
+              class="font-cond case-u lts-sm fs-80 fg-text-l"
+              contenteditable="false"
+              >“Zero lacrime da coccodrillo”</small
+            >
+          </li>
+          <li>
+            <img
+              src="/auro/imgHome/reviews3.jpg"
+              class="wpx-100 img-round mgb-20"
+              title=""
+              alt=""
+              data-edit="false"
+              data-editor="field"
+              data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
+            />
+            <p class="fs-110 font-cond-l" contenteditable="false">
+              "Grazie a Crocotravels ho finalmente fatto il viaggio dei miei
+              sogni, senza dover lottare con mille siti per prenotare. È come
+              avere un coccodrillo guida che ti porta dritto dritto alle acque
+              più limpide e alle offerte più ghiotte. Bravissimi e super
+              simpatici! Prenoterò ancora con loro."
+            </p>
+            <h5
+              class="font-cond mgb-5 fg-text-d fs-130"
+              contenteditable="false"
+            >
+              Giulia F.
+            </h5>
+            <small
+              class="font-cond case-u lts-sm fs-80 fg-text-l"
+              contenteditable="false"
+              >“Il Croco sa dove portarti”</small
+            >
+          </li>
+        </ul>
       </div>
-      <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
-        <li>
-          <img
-            src="/auro/imgHome/reviews1.png"
-            class="wpx-100 img-round mgb-20"
-            title=""
-            alt=""
-            data-edit="false"
-            data-editor="field"
-            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
-          />
-          <p class="fs-110 font-cond-l" contenteditable="false">
-            "Con Crocotravels ho trovato un’agenzia che morde davvero… ma solo
-            le complicazioni! Hanno organizzato tutto nei minimi dettagli: voli,
-            hotel e persino attività extra. Io dovevo solo rilassarmi al sole
-            mentre loro tenevano lontani i ‘piranha’ dello stress.
-            Consigliatissimi!"
-          </p>
-          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">
-            Alice R.
-          </h5>
-          <small
-            class="font-cond case-u lts-sm fs-80 fg-text-l"
-            contenteditable="false"
-            >“Un viaggio da veri coccodrilli”</small
-          >
-        </li>
-        <li>
-          <img
-            src="/auro/imgHome/reviews2.jpg"
-            class="wpx-100 img-round mgb-20"
-            title=""
-            alt=""
-            data-edit="false"
-            data-editor="field"
-            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
-          />
-          <p class="fs-110 font-cond-l" contenteditable="false">
-            "Sono sempre stato scettico sulle agenzie, ma questi ragazzi sono
-            stati fantastici. Offerte feroci, preventivi rapidi e nessun
-            imprevisto (se non la quantità di tramonti bellissimi!).
-            Crocotravels non lascia nulla al caso, come un vero predatore delle
-            occasioni."
-          </p>
-          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">
-            Marco B.
-          </h5>
-          <small
-            class="font-cond case-u lts-sm fs-80 fg-text-l"
-            contenteditable="false"
-            >“Zero lacrime da coccodrillo”</small
-          >
-        </li>
-        <li>
-          <img
-            src="/auro/imgHome/reviews3.jpg"
-            class="wpx-100 img-round mgb-20"
-            title=""
-            alt=""
-            data-edit="false"
-            data-editor="field"
-            data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]"
-          />
-          <p class="fs-110 font-cond-l" contenteditable="false">
-            "Grazie a Crocotravels ho finalmente fatto il viaggio dei miei
-            sogni, senza dover lottare con mille siti per prenotare. È come
-            avere un coccodrillo guida che ti porta dritto dritto alle acque più
-            limpide e alle offerte più ghiotte. Bravissimi e super simpatici!
-            Prenoterò ancora con loro."
-          </p>
-          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">
-            Giulia F.
-          </h5>
-          <small
-            class="font-cond case-u lts-sm fs-80 fg-text-l"
-            contenteditable="false"
-            >“Il Croco sa dove portarti”</small
-          >
-        </li>
-      </ul>
-    </div>
+    </main>
+
     <!-- Footer di Marta -->
     <footer class="modern-footer pt-5">
       <div class="container footer-content">
