@@ -132,20 +132,20 @@
             <div class="container bg-warning p-5 my-2">
               <h1 class="my-2">Lorem</h1>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              <label for="btns">
-                <input type="button" value="mare" />
-                <input type="button" value="montagna" />
-                <input type="button" value="spazio" />
-                <input type="button" value="vulcano" />
-              </label>
+              <div class="filtri-container">
+                <button class="filtro-btn active" data-filtro="tutti">Tutti</button>
+                <button class="filtro-btn" data-filtro="mare">Mare</button>
+                <button class="filtro-btn" data-filtro="montagna">Montagna</button>
+                <button class="filtro-btn" data-filtro="spazio">Spazio</button>
+                <button class="filtro-btn" data-filtro="vulcano">Vulcano</button>
+              </div>
               <!-- card container -->
               <div
                 id="sezione-cards"
                 class="container d-flex justify-content-center flex-wrap bg-info my-5 p-5"
               >
                 <!-- Card 1: Santorini -->
-                <i class="fa-brands fa-facebook-f"></i>
-                <div class="card m-3 col-lg-4 col-md-6">
+                <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="mare">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -169,7 +169,7 @@
                 </div>
 
                 <!-- Card 2: Dolomiti -->
-                <div class="card m-3 col-lg-4 col-md-6">
+                <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="montagna">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -193,7 +193,7 @@
                 </div>
 
                 <!-- Card 3: Islanda -->
-                <div class="card m-3 col-lg-4 col-md-6">
+                <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="spazio">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -217,7 +217,7 @@
                 </div>
 
                 <!-- Card 4: Etna -->
-                <div class="card m-3 col-lg-4 col-md-6">
+                <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="vulcano">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -241,7 +241,7 @@
                 </div>
 
                 <!-- Card 5: Maldive -->
-                <div class="card m-3 col-lg-4 col-md-6">
+                 <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="mare">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -265,7 +265,7 @@
                 </div>
 
                 <!-- Card 6: Cervino -->
-                <div class="card m-3 col-lg-4 col-md-6">
+                <div class="card m-3 col-lg-4 col-md-6 card-destinazione" data-categoria="montagna">
                   <div class="card destination-card h-100">
                     <div class="card-img-container">
                       <img
@@ -521,5 +521,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="dropdown-menu.js"></script>
+    <script src="destinazioni.js"></script>
   </body>
 </html>
